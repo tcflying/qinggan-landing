@@ -1,7 +1,14 @@
 name: Deploy
-on: [push]
-permissions: contents: read pages: write id-token: write
-concurrency: group: pages
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
