@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="情感输入法 - 首款具有情感理解能力的中文输入法。让你的文字更有温度，沟通更有情感。">
+    <meta name="keywords" content="情感输入法, 智能输入法, AI输入法, 中文输入法, Windows输入法, 情感理解">
+    <title>情感输入法 - 让文字更有温度</title>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emotion-ime.com/">
+    <meta property="og:title" content="情感输入法 - 让文字更有温度">
+    <meta property="og:description" content="首款具有情感理解能力的中文输入法。智能分析文字情感，自动推荐更贴切的词汇和表达方式。">
+    <meta property="og:image" content="https://emotion-ime.com/og-image.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="情感输入法">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://emotion-ime.com/">
+    <meta name="twitter:title" content="情感输入法 - 让文字更有温度">
+    <meta name="twitter:description" content="首款具有情感理解能力的中文输入法。智能分析文字情感，自动推荐更贴切的词汇和表达方式。">
+    <meta name="twitter:image" content="https://emotion-ime.com/og-image.png">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "情感输入法",
+      "alternateName": "Emotion IME",
+      "description": "首款具有情感理解能力的中文输入法。能理解用户情绪，自动推荐更贴切的词汇和表达方式。",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Windows",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "9.9",
+        "highPrice": "199",
+        "priceCurrency": "CNY",
+        "offerCount": "3"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "300000"
+      },
+      "featureList": [
+        "情感感知 - 智能分析文字情感倾向",
+        "智能补全 - 根据情感语境推荐候选词",
+        "情感模式 - 温暖鼓励/幽默风趣/正式商务三种模式",
+        "隐私保护 - 本地AI处理，不上传用户数据"
+      ],
+      "screenshot": "https://emotion-ime.com/og-image.png",
+      "url": "https://emotion-ime.com/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "情感输入法",
+        "url": "https://emotion-ime.com/"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">❤️ 情感输入法</div>
+            <div class="nav-links">
+                <a href="#features">核心能力</a>
+                <a href="#pricing">定价</a>
+                <a href="#proof">用户案例</a>
+                <a href="#download" class="nav-cta">立即下载</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">❤️ 首批具有情感理解能力的输入法</div>
+            <h1 class="hero-title">把难说的话<br>说得得体</h1>
+            <p class="hero-subtitle">情感输入法能理解你的情绪，自动推荐更贴切的词汇和表达方式。无论是安慰朋友、表达爱意还是工作沟通，让你的文字更有温度。</p>
+            <div class="hero-cta">
+                <a href="#download" class="btn btn-primary">免费下载体验</a>
+                <a href="#how-it-works" class="btn btn-secondary">了解技术原理</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">30W+</span>
+                    <span class="stat-label">首批用户体验</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">96%</span>
+                    <span class="stat-label">情感识别准确率</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">3种</span>
+                    <span class="stat-label">情感表达模式</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="ime-demo">
+                <div class="ime-header">
+                    <span class="ime-dot"></span>
+                    <span class="ime-dot"></span>
+                    <span class="ime-dot"></span>
+                    <span class="ime-title">情感输入法</span>
+                </div>
+                <div class="ime-content">
+                    <div class="ime-input-line">
+                        <span class="ime-prompt">输入中...</span>
+                        <span class="ime-cursor">|</span>
+                    </div>
+                    <div class="ime-candidates">
+                        <div class="ime-candidate active">
+                            <span class="candidate-icon">😊</span>
+                            <span class="candidate-text">老婆，我爱你（温暖）</span>
+                        </div>
+                        <div class="ime-candidate">
+                            <span class="candidate-icon">😘</span>
+                            <span class="candidate-text">亲爱的，么么哒（亲密）</span>
+                        </div>
+                        <div class="ime-candidate">
+                            <span class="candidate-icon">👍</span>
+                            <span class="candidate-text">老婆最棒了（鼓励）</span>
+                        </div>
+                    </div>
+                    <div class="ime-emotion-bar">
+                        <span class="emotion-label">检测到情感：</span>
+                        <span class="emotion-tag love">❤️ 爱情</span>
+                        <span class="emotion-confidence">置信度 94%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心能力</span>
+                <h2 class="section-title">不只是输入法，是你的情感助手</h2>
+                <p class="section-desc">基于大语言模型，情感输入法能理解文字背后的情绪，让每一次输入都恰到好处。</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>情感感知</h3>
+                    <p>智能分析输入文字的情感倾向，自动识别开心、悲伤、愤怒、爱意等情绪状态。</p>
+                    <div class="feature-stat">96%<span>情感识别准确率</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>智能补全</h3>
+                    <p>根据当前情感语境，智能推荐最贴切的词汇和表达方式，让你的表达更丰富。</p>
+                    <div class="feature-stat">3x<span>表达丰富度提升</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>情感模式</h3>
+                    <p>支持温暖鼓励、幽默风趣、正式商务三种情感模式，一键切换表达风格。</p>
+                    <div class="feature-stat">3种<span>情感表达模式</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>隐私保护</h3>
+                    <p>所有情感分析均在本地完成，不上传用户输入内容，保护你的隐私安全。</p>
+                    <div class="feature-stat">100%<span>本地处理</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">技术原理</span>
+                <h2 class="section-title">情感输入法如何工作</h2>
+                <p class="section-desc">轻量级架构，无缝集成Windows输入法引擎，本地运行保护隐私。</p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="process-num">01</div>
+                    <h4>用户输入</h4>
+                    <p>用户通过键盘输入文字内容</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="process-num">02</div>
+                    <h4>情感分析</h4>
+                    <p>本地AI模型分析输入文字的情感倾向</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="process-num">03</div>
+                    <h4>智能推荐</h4>
+                    <p>根据情感语境推荐更贴切的候选词</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="process-num">04</div>
+                    <h4>用户选择</h4>
+                    <p>用户选择合适的表达方式输出</p>
+                </div>
+            </div>
+            <div class="tech-highlights">
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div>
+                    <h4>毫秒级响应</h4>
+                    <p>本地推理，响应速度低于50ms，无感知延迟</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🧠</div>
+                    <h4>小模型高效</h4>
+                    <p>仅50MB模型文件，内存占用低于100MB</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">💻</div>
+                    <h4>原生集成</h4>
+                    <p>完美兼容Windows输入法引擎，切换无障碍</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔄</div>
+                    <h4>持续学习</h4>
+                    <p>本地增量学习，越用越懂你的表达习惯</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">适用场景</span>
+                <h2 class="section-title">让每一种情感都被精准表达</h2>
+            </div>
+            <div class="use-case-grid">
+                <div class="use-case-card">
+                    <div class="use-case-emoji">💕</div>
+                    <h4>亲密关系</h4>
+                    <p>给爱人、家人发送温暖的话语，让文字传递情感</p>
+                    <div class="use-case-example">"我想你" → "亲爱的，我好想你，今天也在期待见到你"</div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🤝</div>
+                    <h4>职场沟通</h4>
+                    <p>商务邮件、工作汇报，表达专业又不失温度</p>
+                    <div class="use-case-example">"收到" → "已收到，我会尽快处理，有问题随时联系"</div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">😢</div>
+                    <h4>安慰朋友</h4>
+                    <p>朋友难过时，帮你找到最温暖的话语</p>
+                    <div class="use-case-example">"别哭" → "我懂你的难过，我会一直陪着你"</div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-emoji">🎉</div>
+                    <h4>分享喜悦</h4>
+                    <p>分享好消息时，让表达更加生动有感染力</p>
+                    <div class="use-case-example">"我升职了" → "太棒了！恭喜你，这绝对是你实力的体现！"</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">定价</span>
+                <h2 class="section-title">简单透明的定价</h2>
+                <p class="section-desc">选择适合你的版本，让沟通更有温度</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>基础版</h3>
+                        <div class="price"><span class="currency">¥</span><span class="amount">9.9</span><span class="period">/月</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>情感感知</li>
+                        <li>智能补全</li>
+                        <li>基础情感模式</li>
+                        <li>本地数据处理</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full">立即购买</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">最受欢迎</div>
+                    <div class="pricing-header">
+                        <h3>专业版</h3>
+                        <div class="price"><span class="currency">¥</span><span class="amount">59</span><span class="period">/月</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>全部基础版功能</li>
+                        <li>高级情感模式（3种）</li>
+                        <li>优先客服支持</li>
+                        <li>自定义词库</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-full">立即购买</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>终身版</h3>
+                        <div class="price"><span class="currency">¥</span><span class="amount">199</span><span class="period">/终身</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>全部专业版功能</li>
+                        <li>终身免费更新</li>
+                        <li>专属客服通道</li>
+                        <li>优先体验新功能</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-full">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="proof" class="proof">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">用户体验</span>
+                <h2 class="section-title">首批体验者怎么说</h2>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-content">"用了情感输入法后，给女朋友发消息再也不怕词穷了。以前想说'我想你'都不知道怎么表达，现在输入法直接给我推荐了超级暖的话，她都说感觉我变会说话了！"</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">陈</div>
+                        <div class="author-info">
+                            <span class="author-name">陈先生</span>
+                            <span class="author-title">产品经理 | 25岁</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stats">
+                        <span>表达丰富度 +300%</span>
+                        <span>女友满意度 +50%</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">"工作中经常需要写邮件，以前总觉得太生硬。用情感输入法后，它能根据内容推荐更恰当的表达，专业又不失人情味，客户反馈都说邮件读起来很舒服。"</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">林</div>
+                        <div class="author-info">
+                            <span class="author-name">林女士</span>
+                            <span class="author-title">销售经理 | 32岁</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stats">
+                        <span>邮件回复率 +25%</span>
+                        <span>客户好评率 +40%</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">"我是做客服的，每天要回复很多消息。情感输入法能帮我找到更合适的表达方式，尤其是安慰客户的时候，比我自己想的要专业多了。"</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">周</div>
+                        <div class="author-info">
+                            <span class="author-name">周小姐</span>
+                            <span class="author-title">电商客服 | 23岁</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stats">
+                        <span>工作效率 +50%</span>
+                        <span>客户满意度 +35%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric">
+                    <span class="metric-value">30W+</span>
+                    <span class="metric-label">首批用户体验</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">96%</span>
+                    <span class="metric-label">情感识别准确率</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">4.8</span>
+                    <span class="metric-label">用户评分</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">100%</span>
+                    <span class="metric-label">隐私本地处理</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <span class="section-tag">限时内测</span>
+                    <h2>首批内测用户招募中</h2>
+                    <p>前10000名报名用户，可享永久免费使用权。名额有限，先到先得。</p>
+                    <ul class="download-benefits">
+                        <li>✓ 永久免费使用</li>
+                        <li>✓ 优先获得新功能体验</li>
+                        <li>✓ 专属用户群交流</li>
+                    </ul>
+                </div>
+                <form id="download-form" class="download-form">
+                    <div class="form-group">
+                        <label for="email">邮箱地址 <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="wechat">微信号 <span class="required">*</span></label>
+                        <input type="text" id="wechat" name="wechat" placeholder="方便客服联系您" required>
+                        <span class="error-message" id="wechat-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="usage">主要使用场景 <span class="required">*</span></label>
+                        <select id="usage" name="usage" required>
+                            <option value="">请选择使用场景</option>
+                            <option value="personal">日常聊天</option>
+                            <option value="work">工作沟通</option>
+                            <option value="social">社交媒体</option>
+                            <option value="other">其他</option>
+                        </select>
+                        <span class="error-message" id="usage-error"></span>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
+                        <span class="btn-text">立即报名内测</span>
+                        <span class="btn-loading" style="display:none;">提交中...</span>
+                    </button>
+                    <p class="form-note">我们尊重隐私，不会向第三方透露您的信息</p>
+                </form>
+                <div id="form-error" class="form-error" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">❤️ 情感输入法</div>
+                <p>让文字更有温度，沟通更有情感</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>产品</h4>
+                    <a href="#features">核心能力</a>
+                    <a href="#how-it-works">技术原理</a>
+                    <a href="#proof">用户案例</a>
+                </div>
+                <div class="footer-col">
+                    <h4>支持</h4>
+                    <a href="#">使用文档</a>
+                    <a href="#">常见问题</a>
+                    <a href="#">联系客服</a>
+                </div>
+                <div class="footer-col">
+                    <h4>公司</h4>
+                    <a href="#">关于我们</a>
+                    <a href="#">加入团队</a>
+                    <a href="#">隐私政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 情感输入法 版权所有 | 让输入更有温度</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3>报名成功！</h3>
+            <p>感谢您的加入，我们会在3个工作日内发送内测邀请。</p>
+            <button class="btn btn-primary" onclick="closeModal()">知道了</button>
+        </div>
+    </div>
+
+    <script>
+        // Analytics tracking
+        (function() {
+            const data = {
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent,
+                referrer: document.referrer,
+                page: 'emotion-ime-landing'
+            };
+            fetch('./analytics.json', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            }).catch(function() {});
+        })();
+
+        // Form validation helpers
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function showError(fieldId, message) {
+            const errorEl = document.getElementById(fieldId + '-error');
+            if (errorEl) {
+                errorEl.textContent = message;
+                errorEl.style.display = 'block';
+            }
+            document.getElementById(fieldId).classList.add('input-error');
+        }
+
+        function clearError(fieldId) {
+            const errorEl = document.getElementById(fieldId + '-error');
+            if (errorEl) {
+                errorEl.textContent = '';
+                errorEl.style.display = 'none';
+            }
+            document.getElementById(fieldId).classList.remove('input-error');
+        }
+
+        function clearAllErrors() {
+            ['email', 'wechat', 'usage'].forEach(clearError);
+            const formError = document.getElementById('form-error');
+            if (formError) formError.style.display = 'none';
+        }
+
+        function setLoading(isLoading) {
+            const btn = document.getElementById('submit-btn');
+            if (!btn) return;
+            const btnText = btn.querySelector('.btn-text');
+            const btnLoading = btn.querySelector('.btn-loading');
+            btn.disabled = isLoading;
+            if (btnText) btnText.style.display = isLoading ? 'none' : 'inline';
+            if (btnLoading) btnLoading.style.display = isLoading ? 'inline' : 'none';
+        }
+
+        // Form submission
+        document.getElementById('download-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearAllErrors();
+
+            const email = document.getElementById('email').value.trim();
+            const wechat = document.getElementById('wechat').value.trim();
+            const usage = document.getElementById('usage').value;
+
+            // Validation
+            let hasError = false;
+
+            if (!email) {
+                showError('email', '请输入邮箱地址');
+                hasError = true;
+            } else if (!validateEmail(email)) {
+                showError('email', '请输入有效的邮箱格式');
+                hasError = true;
+            }
+
+            if (!wechat) {
+                showError('wechat', '请输入微信号');
+                hasError = true;
+            } else if (wechat.length < 4) {
+                showError('wechat', '微信号长度至少4个字符');
+                hasError = true;
+            }
+
+            if (!usage) {
+                showError('usage', '请选择使用场景');
+                hasError = true;
+            }
+
+            if (hasError) return;
+
+            setLoading(true);
+
+            const formData = {
+                email: email,
+                wechat: wechat,
+                usage: usage,
+                timestamp: new Date().toISOString()
+            };
+
+            fetch('./waitlist.json', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(formData)
+            }).then(function(response) {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            }).then(function() {
+                document.getElementById('success-modal').classList.add('active');
+                document.getElementById('download-form').reset();
+            }).catch(function(error) {
+                console.error('Form submission error:', error);
+                const formError = document.getElementById('form-error');
+                if (formError) {
+                    formError.textContent = '提交失败，请稍后重试或联系客服';
+                    formError.style.display = 'block';
+                }
+            }).finally(function() {
+                setLoading(false);
+            });
+        });
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.remove('active');
+        }
+
+        // Real-time validation on blur
+        ['email', 'wechat'].forEach(function(fieldId) {
+            const el = document.getElementById(fieldId);
+            if (el) {
+                el.addEventListener('blur', function() {
+                    const value = this.value.trim();
+                    if (fieldId === 'email' && value && !validateEmail(value)) {
+                        showError(fieldId, '请输入有效的邮箱格式');
+                    } else if (fieldId === 'wechat' && value && value.length < 4) {
+                        showError(fieldId, '微信号长度至少4个字符');
+                    } else if (value) {
+                        clearError(fieldId);
+                    }
+                });
+            }
+        });
+
+        // Clear error when user starts typing
+        ['email', 'wechat', 'usage'].forEach(function(fieldId) {
+            const el = document.getElementById(fieldId);
+            if (el) {
+                el.addEventListener('input', function() {
+                    clearError(fieldId);
+                });
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
+</body>
+</html>
